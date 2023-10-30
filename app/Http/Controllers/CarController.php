@@ -54,6 +54,8 @@ class CarController extends Controller
     public function edit(Car $car)
     {
         //
+        $category = Category::all();
+        return view('admin.editcar', compact('car','category'));
     }
 
     /**
@@ -62,6 +64,8 @@ class CarController extends Controller
     public function update(CarRequest $request, Car $car)
     {
         //
+        $car->update($request->all());
+        return redirect('admin/car');
     }
 
     /**

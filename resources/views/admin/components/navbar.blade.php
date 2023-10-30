@@ -10,24 +10,27 @@
                 <a href="" class="close">&times;</a>
             </div><!-- az-header-menu-header -->
             <ul class="nav">
-                <li class="nav-item {{Request::is('admin/dashboard') ? 'active' : ''}}">
-                    <a href="{{route('dashboard')}}" class="nav-link"><i class="fas fa-chart-line fa-fw"></i>
+                <li class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                    <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-chart-line fa-fw"></i>
                         Dashboard</a>
                 </li>
-                <li class="nav-item {{Request::is('admin/category', 'admin/car', 'admin/addcar') ? 'active' : ''}}">
+                <li class="nav-item {{ Request::is('admin/category', 'admin/car', 'admin/addcar') ? 'active' : '' }}">
                     <a href="" class="nav-link with-sub"><i class="fas fa-car fa-fw"></i> Cars</a>
                     <nav class="az-menu-sub">
-                        <a href="{{route('indexCategory')}}" class="nav-link">Category</a>
-                        <a href="{{route('indexCar')}}" class="nav-link">Cars</a>
+                        <a href="{{ route('indexCategory') }}" class="nav-link">Category</a>
+                        <a href="{{ route('indexCar') }}" class="nav-link">Cars</a>
                     </nav>
                 </li>
                 <li class="nav-item">
                     <a href="chart-chartjs.html" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
                         Transactions</a>
                 </li>
-                <li class="nav-item">
-                    <a href="form-elements.html" class="nav-link"><i class="far fa-user fa-fw"></i>
-                        User</a>
+                <li class="nav-item {{ Request::is('admin/adminlist', 'admin/memberlist') ? 'active' : '' }}">
+                    <a href="" class="nav-link with-sub"><i class="fas fa-user fa-fw"></i> User</a>
+                    <nav class="az-menu-sub">
+                        <a href="{{ route('indexAdmin') }}" class="nav-link">Admin</a>
+                        <a href="{{ route('indexCar') }}" class="nav-link">Member</a>
+                    </nav>
                 </li>
             </ul>
         </div><!-- az-header-menu -->
@@ -51,7 +54,8 @@
                         Profile</a>
                     <a href="" class="dropdown-item"><i class="typcn typcn-edit"></i> Edit Profile</a>
                     <a href="" class="dropdown-item"><i class="typcn typcn-time"></i> Activity Logs</a> --}}
-                    <a href="{{route('profile.edit')}}" class="dropdown-item"><i class="typcn typcn-cog-outline"></i> Account
+                    <a href="{{ route('profile.edit') }}" class="dropdown-item"><i class="typcn typcn-cog-outline"></i>
+                        Account
                         Settings</a>
                     <a href="#"onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                         class="dropdown-item"><i class="typcn typcn-power-outline"></i>

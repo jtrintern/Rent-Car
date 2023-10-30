@@ -4,6 +4,8 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
+
 
 class CarRequest extends FormRequest
 {
@@ -29,7 +31,7 @@ class CarRequest extends FormRequest
             'categoryId' => 'required',
             'totalSit' => 'required|max:1',
             'totalLuggage' => 'required|max:1',
-            'noPol' => ['required', 'string', 'max:15', 'unique:cars'],
+            'noPol' => ['required', 'string', 'max:15', Rule::unique('cars')->ignore($this->car)],
             'costPerDay' => 'required|max:6',
         ];
     }

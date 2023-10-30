@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CarController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,13 @@ Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'a
     Route::get('/addcar', [CarController::class , 'create'])->name('addCar');
     Route::post('/storecar', [CarController::class , 'store'])->name('storeCar');
     Route::get('/deleteCar/{car}', [CarController::class , 'destroy'])->name('deleteCar');
+    Route::get('/editcar/{car}', [CarController::class , 'edit'])->name('editCar');
+    Route::post('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
+
+    Route::get('/adminlist', [UserController::class , 'indexAdmin'])->name('indexAdmin');
+    Route::get('/addadmin', [CarController::class , 'createAdmin'])->name('addAdmin');
+    Route::post('/storeadmin', [CarController::class , 'storeAdmin'])->name('storeAdmin');
+    Route::get('/deleteadmin/{user}', [UserController::class , 'destroy'])->name('deleteAdmin');
 
 
     Route::get('/category', [CategoryController::class , 'index'])->name('indexCategory');

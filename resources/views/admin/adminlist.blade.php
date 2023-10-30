@@ -1,7 +1,7 @@
 @extends('admin.components.main', [
     'namePage' => 'Dashboard',
 ])
-@section('title', 'Car')
+@section('title', 'Admin List')
 @section('content')
     <div class="az-content-body">
         <div class="az-dashboard-one-title">
@@ -25,18 +25,14 @@
 
         <div class="row row-sm mg-b-20">
             <div class="col-lg-12 ht-lg-100p">
-                <div class="az-content-label mg-b-10">Car Category</div>
+                <div class="az-content-label mg-b-10">Admin List</div>
                 <div class="row row-sm mg-b-20">
                     <div class="col-md-10 ht-lg-100p">
-                        <p class="mg-b-20">In this table, we have a list of cars available for rent, including their make,
-                            model, cost per day, and availability status. You can customize this
-                            table with your specific rental inventory data or add more columns as needed for additional
-                            information,
-                            such as rental duration, location, or other relevant details.
+                        <p class="mg-b-20">n this table, there's admin data with full names, email, phone number, and addresses.
                         </p>
                     </div>
                     <div class="col-md-2 ht-lg-100p">
-                        <a href="{{route('addCar')}}" class="btn btn-outline-indigo btn-block">Add New Car</a>
+                        <a href="{{route('addAdmin')}}" class="btn btn-outline-indigo btn-block">Add New Admin</a>
                     </div>
                 </div>
 
@@ -45,31 +41,26 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Model</th>
-                                <th>Make</th>
-                                <th>Category</th>
-                                <th>License Plate</th>
-                                <th>Status</th>
-                                <th>Cost/Day</th>
-                                <th>Action</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Address</th>
                             </tr>
                         </thead>
                         <tbody>
                             @php
                                 $i = 1;
                             @endphp
-                            @foreach ($cars as $car)
+                            @foreach ($users as $user)
                                 <tr>
                                     <th scope="row">{{ $i++ }}</th>
-                                    <td>{{ $car->carName }}</td>
-                                    <td>{{ $car->carBrand }}</td>
-                                    <td>{{ $car->category->name }}</td>
-                                    <td>{{ $car->noPol }}</td>
-                                    <td>{{ $car->status() }}</td>
-                                    <td>Rp. {{ number_format($car->costPerDay) }}</td>
+                                    <td>{{ $user->firstName.' '.$user->lastName }}</td>
+                                    <td>{{ $user->email }}</td>
+                                    <td>{{ $user->phone }}</td>
+                                    <td>{{ $user->address }}</td>
                                     <td>
                                         <div class="row">
-                                            <button type="button" data-toggle="modal" data-target="#deleteModal"
+                                            <button type="button" {{Auth::user()->id == $user->id ? 'disabled':''}} data-toggle="modal" data-target="#deleteModal"
                                                 class="btn btn-outline-danger btn-icon mg-r-10"><i
                                                     class="typcn typcn-trash"></i></button>
                                             <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog"
@@ -90,13 +81,13 @@
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-dismiss="modal">Close</button>
-                                                            <a href="deleteCar/{{ $car->id }}"
+                                                            <a href="deleteAdmin/{{ $user->id }}"
                                                                 class="btn btn-danger">Delete</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a href="editcar/{{ $car->id }}" class="btn btn-outline-warning btn-icon"><i class="typcn typcn-edit"></i></a>
+                                            <a {{Auth::user()->id == $user->id ? 'disabled':''}} class="btn btn-outline-warning btn-icon"><i class="typcn typcn-edit"></i></a>
                                         </div>
                                     </td>
                                 </tr>
