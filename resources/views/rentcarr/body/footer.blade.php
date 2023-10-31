@@ -12,8 +12,7 @@
           Curabitur aliquet quam id dui posuere, sit amet gravida tortor eu. In hac habitasse platea dictumst.
           Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
         <div class="social-links mt-3">
-          <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook-circle"></i></a>
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
@@ -47,7 +46,6 @@
 </div>
 
 <div class="container footer-bottom clearfix">
-  <hr>
   <div class="copyright">Copyright 
     &copy; 2023 <a href="{{route ('home')}}">rentcar.</a> - All Rights Reserved
   </div>
