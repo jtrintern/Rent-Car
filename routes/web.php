@@ -50,10 +50,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// Route::get('/home',[rentCarController::class, 'Home'])->name('home');
-// Route::get('/listkendaraan',[rentCarController::class, 'PageListkendaraan'])->name('listkendaraan');
-// Route::get('/detailkendaraan',[rentCarController::class, 'PageDetailkendaraan'])->name('detailkendaraan');
-// Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
+Route::get('/',function(){
+    return view('rentcarr.index');
+})->name('home');
+Route::get('/listkendaraan',[rentCarController::class, 'PageListkendaraan'])->name('listkendaraan');
+Route::get('/detailkendaraan',[rentCarController::class, 'PageDetailkendaraan'])->name('detailkendaraan');
+Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 
 require __DIR__ . '/auth.php';

@@ -11,7 +11,7 @@
 
     <!-- Favicons -->
     <!-- <link href="assets/img/favicon.png" rel="icon"> -->
-    <link href="{{ asset ('rentCar/assets/img/apple-touch-icon.png') }}"
+    <link href="{{ asset ('assets/rentCar/assets/img/apple-touch-icon.png') }}"
         rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -20,18 +20,18 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset ('rentCar/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset ('assets/rentCar/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
         rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
         rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/boxicons/css/boxicons.min.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/boxicons/css/boxicons.min.css') }}"
         rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/glightbox/css/glightbox.min.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/glightbox/css/glightbox.min.css') }}"
         rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/remixicon/remixicon.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/remixicon/remixicon.css') }}"
         rel="stylesheet">
-    <link href="{{ asset ('rentCar/assets/vendor/swiper/swiper-bundle.min.css') }}"
+    <link href="{{ asset ('assets/rentCar/assets/vendor/swiper/swiper-bundle.min.css') }}"
         rel="stylesheet">
 
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -49,7 +49,7 @@
 
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset ('rentCar/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset ('assets/rentCar/assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -65,19 +65,19 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset ('rentCar/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset ('assets/rentCar/assets/vendor/aos/aos.js') }}"></script>
     <script
-        src="{{ asset ('rentCar/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}">
+        src="{{ asset ('assets/rentCar/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}">
     </script>
-    <script src="{{ asset ('rentCar/assets/vendor/glightbox/js/glightbox.min.js') }}">
+    <script src="{{ asset ('assets/rentCar/assets/vendor/glightbox/js/glightbox.min.js') }}">
     </script>
-    <script src="{{ asset ('rentCar/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}">
+    <script src="{{ asset ('assets/rentCar/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}">
     </script>
-    <script src="{{ asset ('rentCar/assets/vendor/swiper/swiper-bundle.min.js') }}">
+    <script src="{{ asset ('assets/rentCar/assets/vendor/swiper/swiper-bundle.min.js') }}">
     </script>
-    <script src="{{ asset ('rentCar/assets/vendor/waypoints/noframework.waypoints.js') }}">
+    <script src="{{ asset ('assets/rentCar/assets/vendor/waypoints/noframework.waypoints.js') }}">
     </script>
-    <script src="{{ asset ('rentCar/assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset ('assets/rentCar/assets/vendor/php-email-form/validate.js') }}"></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
@@ -95,7 +95,7 @@
 
 
     <!-- Template Main JS File -->
-    <script src="{{ asset ('rentCar/assets/js/main.js') }}"></script>
+    <script src="{{ asset ('assets/rentCar/assets/js/main.js') }}"></script>
 
 </body>
 
