@@ -15,7 +15,8 @@ class Car extends Model
         'categoryId',
         'carBrand',
         'carName',
-        'carImage',
+        'coverImage',
+        'galleryImage',
         'available',
         'totalSit',
         'totalLuggage',
@@ -27,6 +28,10 @@ class Car extends Model
 
         'available' => '0',
 
+    ];
+
+    protected $casts = [
+        'galleryImage' => 'array',
     ];
     
     public $timestamps = true;

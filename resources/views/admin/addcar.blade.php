@@ -95,8 +95,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="formFile">Default file input example</label>
-                        <input  value="{{ old('carImage') }}" name="carImage" class="form-control" type="file" id="formFile">
+                        <label for="formFile">Cover Image</label>
+                        <input  value="{{ old('coverImage') }}" name="coverImage" class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="formFile">Gallery Image</label>
+                        <input  value="{{ old('galleryImage[]') }}" name="galleryImage[]" multiple class="form-control" type="file" id="formFile">
                     </div>
                 </div>
             </div>

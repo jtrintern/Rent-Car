@@ -36,9 +36,21 @@ class CarController extends Controller
     {
         //
         $validated = $request->all();
-        $fileName = time() . '.' . $request->carImage->extension();
-        $validated['carImage'] = $fileName;
-        $request->carImage->move(public_path('images'), $fileName);
+        $fileName = time() . '.' . $request->coverImage->extension();
+        $validated['coverImage'] = $fileName;
+
+        $request->coverImage->move(public_path('images/cover'), $fileName);
+
+        foreach ($validated['galleryImage'] as $key => $value) {
+            $imgname = time() . '_'.$key.'.' . $value->extension();
+
+            $validated['galleryImage'][$key]= $imgname;
+            
+            $value->move(public_path('images/gallery'), $imgname);
+
+        } 
+
+        // dd($validated['galleryImage']);
         
         Car::create($validated);
 
