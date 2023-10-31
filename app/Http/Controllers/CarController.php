@@ -35,7 +35,12 @@ class CarController extends Controller
     public function store(CarRequest $request)
     {
         //
-        Car::create($request->all());
+        $validated = $request->all();
+        $fileName = time() . '.' . $request->carImage->extension();
+        $validated['carImage'] = $fileName;
+        $request->carImage->move(public_path('images'), $fileName);
+        
+        Car::create($validated);
 
         return redirect('admin/car');
     }

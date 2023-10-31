@@ -33,8 +33,8 @@ Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'a
     Route::post('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
 
     Route::get('/adminlist', [UserController::class , 'indexAdmin'])->name('indexAdmin');
-    Route::get('/addadmin', [CarController::class , 'createAdmin'])->name('addAdmin');
-    Route::post('/storeadmin', [CarController::class , 'storeAdmin'])->name('storeAdmin');
+    Route::get('/addadmin', [UserController::class , 'createAdmin'])->name('addAdmin');
+    Route::post('/storeadmin', [UserController::class , 'storeAdmin'])->name('storeAdmin');
     Route::get('/deleteadmin/{user}', [UserController::class , 'destroy'])->name('deleteAdmin');
 
 

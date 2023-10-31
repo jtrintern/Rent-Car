@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('categoryId');
             $table->string('carBrand', 30);
             $table->string('carName', 30);
+            $table->string('carImage', 30)->nullable();
             $table->enum('available', ['0','1']);
             $table->integer('totalSit')->length(1)->unsigned();
             $table->integer('totalLuggage')->length(1)->unsigned();

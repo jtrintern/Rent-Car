@@ -15,6 +15,7 @@ class Car extends Model
         'categoryId',
         'carBrand',
         'carName',
+        'carImage',
         'available',
         'totalSit',
         'totalLuggage',

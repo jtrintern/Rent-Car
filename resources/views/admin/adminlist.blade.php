@@ -56,7 +56,7 @@
                                     <th scope="row">{{ $i++ }}</th>
                                     <td>{{ $user->firstName.' '.$user->lastName }}</td>
                                     <td>{{ $user->email }}</td>
-                                    <td>{{ $user->phone }}</td>
+                                    <td>+62{{ $user->phone }}</td>
                                     <td>{{ $user->address }}</td>
                                     <td>
                                         <div class="row">

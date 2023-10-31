@@ -37,51 +37,52 @@
             <div class="row row-sm mg-b-20">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="name">Car Model</label>
+                        <label for="firstname">First Name</label>
                         <input class="form-control" value="{{ old('carName') }}" type="text" name="carName"
-                            id="name">
+                            id="firstname">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="">Car Brand</label>
+                        <label for="lastname">Last Name</label>
                         <input class="form-control" value="{{ old('carBrand') }}" type="text" name="carBrand"
-                            id="">
+                            id="lastname">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="">Category</label>
-                        <select class="form-control" name="categoryId" id="">
-                            <option value=""></option>
-                            @foreach ($category as $cate)
-                                <option value="{{ $cate->id }}">{{ $cate->name }}</option>
-                            @endforeach
-                        </select>
+                        <label for="email">email</label>
+                        <input class="form-control" value="{{ old('carBrand') }}" type="email" name="carBrand"
+                            id="email">
                     </div>
                 </div>
             </div>
             <div class="row row-sm mg-b-20">
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="name">Total Sit</label>
-                        <input class="form-control" type="number" name="totalSit" id="name"
+                        <label for="phone">Phone</label>
+                        <input class="form-control" type="text" name="totalSit" id="phone"
                             value="{{ old('totalSit') }}">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="">Total Luggage</label>
-                        <input class="form-control" type="text" name="totalLuggage" id=""
+                        <label for="address">Address</label>
+                        <input class="form-control" type="text" name="totalLuggage" id="address"
                             value="{{ old('totalLuggage') }}">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="">License Plate Number</label>
-                        <input class="form-control" type="text" style="text-transform:uppercase"
-                            oninput="this.value = this.value.toUpperCase()" name="noPol" id=""
-                            value="{{ old('noPol') }}">
+                        <label for="birthdate">Birthdate</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+                                </div>
+                            </div>
+                            <input type="date" id="datetimepicker" class="form-control">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,7 +97,8 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="formFile">Default file input example</label>
-                        <input  value="{{ old('carImage') }}" name="carImage" class="form-control" type="file" id="formFile">
+                        <input value="{{ old('carImage') }}" name="carImage" class="form-control" type="file"
+                            id="formFile">
                     </div>
                 </div>
             </div>
@@ -104,6 +106,5 @@
             <button type="submit" class="btn btn-outline-indigo">Add New Car</button>
         </form>
     </div><!-- az-content-body -->
-
 
 @endsection
