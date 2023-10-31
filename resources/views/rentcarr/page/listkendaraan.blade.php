@@ -23,12 +23,12 @@
 
   <main id="main">
     <section id="all-car" class="all-car">
-      <div class="container filter-kendaraan">
+      <div class="container filter-kendaraan" style=" padding:0">
         <div class="filter d-flex">
-          <div class="col-lg-1">
+          <div class="col-md-1">
             <h4>Filter :</h4>
           </div>
-          <div class="col-lg-9 col-md-4 col-sm-2 d-flex">
+          <div class="col-md-9 col-md-4 col-sm-2 d-flex" style=" padding:0">
             <div class="dropdown">
               <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
                 Kapasitas Penumpang
@@ -71,7 +71,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2" style="text-align: end;">
+          <div class="col-md-2" style="text-align: end; padding:0">
             <div class="dropdown">
               <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
                 Urutkan
