@@ -19,6 +19,14 @@ class rentCarController extends Controller
         return view('rentcarr.page.detailkendaraan');
     }
 
+    public function PagePesan() {
+        return view('rentcarr.page.pesan');
+    }
+
+    public function PageInvoice() {
+        return view('rentcarr.page.invoice');
+    }
+
     public function PageLoginRegister() {
         return view('rentcarr.page.login-register');
     }

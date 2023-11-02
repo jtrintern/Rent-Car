@@ -1049,6 +1049,7 @@ section {
   height: 100%; */
   min-height: 230px;
   max-height: 230px;
+  border-radius: 6px;
 }
 
 .kendaraan-detail #custCarousel .carousel-indicators {
@@ -1068,6 +1069,7 @@ section {
   /* max-height: 60px; */
   min-width: 80px;
   max-width: 80px;
+  border-radius: 6px;
 }
 
 .kendaraan-detail #custCarousel .carousel-indicators li.active img {
@@ -1380,6 +1382,228 @@ section {
     border-bottom-right-radius: .3rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Pemesanan
+--------------------------------------------------------------*/
+.judul-pesan{
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#pesan .data-pesanan label, #pesan .data-penyewa label {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  color: var(--black-color);
+}
+
+#pesan .data-pesanan option, #pesan .data-penyewa label {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 12px;
+  color: var(--text-blackt);
+}
+
+#pesan .modal .modal-body {
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+
+#pesan .modal .modal-body .content img {
+  margin-top: 60px;
+}
+
+#pesan .modal .modal-body .content h3 {
+  font-family: 'Rubik';
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-top: 16px;
+}
+
+#pesan .modal .modal-body .content h5 {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  color: var(--text-blackt);
+  margin-top: 10px;
+}
+
+#pesan .modal .modal-body .btn {
+  /* background-color: var(--primary-color); */
+  /* Hijau */
+  /* border: none; */
+  /* color: white; */
+  /* padding: 10px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  /* margin: 15px 0px; */
+  margin-bottom: 1px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  /* width: 5px; */
+  width: 190px;
+  height: 40px;
+}
+
+#pesan .modal .modal-body .btn1 {
+  border-color: var(--secondary-primary);
+  border: 1px solid;
+}
+
+#pesan .modal .modal-body .btn2 {
+  /* border: none; */
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* #pesan .modal .modal-body .btn1:hover {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#pesan .modal .modal-body .btn2:hover {
+  border-color: var(--secondary-primary);
+  border: 1px solid;
+  background-color: transparent;
+  color: var(--black-color);
+} */
+
+/* #pesan .modal .modal-body .btn:hover {
+  opacity: 0.9;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+} */
+
+#pesan .btn-bayar {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#pesan .btn-bayar:hover {
+  opacity: 0.9;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+#invoice .invoice-body {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  border-radius: 6px;
+}
+
+#invoice .invoice-body .nomor-invoice {
+  border-bottom: 2px solid rgb(234, 228, 228, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#invoice .invoice-body .data-pemesan h3 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+
+#invoice .invoice-body .data-pesanan .data-pemesan h4 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: var(--text-blackt);
+}
+
+#invoice .invoice-body .data-pesanan .rincian-pesanan {
+  background-color: #FCFCFC;
+  border-radius: 6px;
+  border: 1px solid #D3D3D3;
+  margin: 0 15px;
+}
+
+#invoice .invoice-body .data-pesanan .rincian-pesanan .title h3 {
+  font-family: 'Rubik';
+  font-size: 16px;
+  color: #000; 
+  margin: 0;
+}
+
+#invoice .invoice-body .rincian-pesanan .title {
+  border-bottom: 2px solid rgb(234, 228, 228, 0.5);
+  padding: 5px 0 5px 0;
+}
+
+#invoice .invoice-body .rincian-pesanan .rincian {
+  padding: 8px 0 8px 0;
+}
+
+#invoice .invoice-body .rincian-pesanan .rincian h3 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#invoice .invoice-body .rincian-pesanan .rincian h4 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+#invoice .invoice-body .rincian-pesanan .total {
+  border-top: 2px solid rgb(234, 228, 228, 0.5);
+  /* padding: 5px 0 5px 0; */
+}
+
+#invoice .invoice-body .rincian-pesanan .total h4 {
+  font-family: 'Plus Jakarta Sans';
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+/* .text-card{
+  font-weight: bold;
+}
+
+.card-rinci{
+  background-color: #fcfcfc;
+  border: 1px solid;
+  border-color: #d3d3d3;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+} */
+
+#invoice .btn-download {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#invoice .btn-download:hover {
+  opacity: 0.9;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
+}
+
+#invoice .button-download{
+  text-align: center;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

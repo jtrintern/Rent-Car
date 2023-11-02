@@ -55,6 +55,8 @@ Route::get('/',function(){
 })->name('home');
 Route::get('/listkendaraan',[rentCarController::class, 'PageListkendaraan'])->name('listkendaraan');
 Route::get('/detailkendaraan',[rentCarController::class, 'PageDetailkendaraan'])->name('detailkendaraan');
+Route::get('/pesan',[rentCarController::class, 'PagePesan'])->name('pesanrental');
+Route::get('/invoice',[rentCarController::class, 'PageInvoice'])->name('invoice');
 Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 

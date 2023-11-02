@@ -157,7 +157,7 @@
                         </div>
                         <div
                             class="col-sm-6  entry-button flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
-                            <button class="btn-entry" onclick="window.location.href='sewa.html'">Sewa
+                            <button class="btn-entry" onclick="window.location.href='{{route ('pesanrental')}}';">Sewa
                                 Sekarang</button>
                         </div>
                     </div>
