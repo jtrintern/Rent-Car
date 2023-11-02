@@ -12,11 +12,18 @@ class CarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function indexList()
     {
         //
         $cars = Car::all();
         return view('admin.car', compact('cars'));
+    }
+    
+    public function indexHomePage()
+    {
+        //
+        $cars = Car::where('available', '0')->get();
+        return view('rentcarr.index', compact('cars'));
     }
 
     /**

@@ -31,6 +31,7 @@ class CarRequest extends FormRequest
             'galleryImage.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'carBrand' => 'required|max:30',
             'categoryId' => 'required',
+            'transmisi' => 'required',
             'totalSit' => 'required|max:1',
             'totalLuggage' => 'required|max:1',
             'noPol' => ['required', 'string', 'max:15', Rule::unique('cars')->ignore($this->car)],

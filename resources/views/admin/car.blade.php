@@ -47,6 +47,7 @@
                                 <th>No</th>
                                 <th>Model</th>
                                 <th>Make</th>
+                                <th>Transmission</th>
                                 <th>Category</th>
                                 <th>License Plate</th>
                                 <th>Status</th>
@@ -63,6 +64,7 @@
                                     <th scope="row">{{ $i++ }}</th>
                                     <td>{{ $car->carName }}</td>
                                     <td>{{ $car->carBrand }}</td>
+                                    <td>{{ $car->transmisi }}</td>
                                     <td>{{ $car->category->name }}</td>
                                     <td>{{ $car->noPol }}</td>
                                     <td>{{ $car->status() }}</td>

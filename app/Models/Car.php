@@ -18,6 +18,7 @@ class Car extends Model
         'coverImage',
         'galleryImage',
         'available',
+        'transmisi',
         'totalSit',
         'totalLuggage',
         'noPol',
@@ -46,6 +47,14 @@ class Car extends Model
             return 'Available';
         }else{
             return 'Not Available';
+        }
+    }
+    
+    public function transmission(){
+        if ($this->transmisi == 0){
+            return 'Manual';
+        }else{
+            return 'Matic';
         }
     }
 }

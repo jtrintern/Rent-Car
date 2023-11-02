@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('coverImage')->nullable();
             $table->json('galleryImage')->nullable();
             $table->enum('available', ['0','1']);
+            $table->enum('transmisi', ['0','1']);
             $table->integer('totalSit')->length(1)->unsigned();
             $table->integer('totalLuggage')->length(1)->unsigned();
             $table->string('noPol', 13)->unique();

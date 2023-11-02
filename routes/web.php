@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'admin'], function () {
     Route::get('/dashboard', [TransactionController::class , 'dashboard'])->name('dashboard');
     
-    Route::get('/car', [CarController::class , 'index'])->name('indexCar');
+    Route::get('/car', [CarController::class , 'indexList'])->name('indexCar');
     Route::get('/addcar', [CarController::class , 'create'])->name('addCar');
     Route::post('/storecar', [CarController::class , 'store'])->name('storeCar');
     Route::get('/deleteCar/{car}', [CarController::class , 'destroy'])->name('deleteCar');
@@ -50,9 +50,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/',function(){
-    return view('rentcarr.index');
-})->name('home');
+Route::get('/',[CarController::class, 'indexHomePage'])->name('home');
 Route::get('/listkendaraan',[rentCarController::class, 'PageListkendaraan'])->name('listkendaraan');
 Route::get('/detailkendaraan',[rentCarController::class, 'PageDetailkendaraan'])->name('detailkendaraan');
 Route::get('/pesan',[rentCarController::class, 'PagePesan'])->name('pesanrental');
