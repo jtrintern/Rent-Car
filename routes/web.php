@@ -51,9 +51,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/',[CarController::class, 'indexHomePage'])->name('home');
-Route::get('/listkendaraan',[rentCarController::class, 'PageListkendaraan'])->name('listkendaraan');
-Route::get('/detailkendaraan',[rentCarController::class, 'PageDetailkendaraan'])->name('detailkendaraan');
-Route::get('/pesan',[rentCarController::class, 'PagePesan'])->name('pesanrental');
+Route::get('/listcar',[CarController::class, 'indexListPage'])->name('listkendaraan');
+Route::get('/detailcar/{car}',[CarController::class, 'show'])->name('detailkendaraan');
+Route::get('/book/{car}',[CarController::class, 'PagePesan'])->name('pesanrental');
 Route::get('/invoice',[rentCarController::class, 'PageInvoice'])->name('invoice');
 Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 

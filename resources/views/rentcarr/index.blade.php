@@ -16,8 +16,8 @@
                     </div>
                 </div>
                 <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                      <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-                    </div> -->
+                              <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                            </div> -->
             </div>
 
         </div>
@@ -78,38 +78,37 @@
                     @foreach ($cars->take(8) as $car)
                         <div class="product col">
                             <div class="card card-product shadow-sm h-100">
-                                <img class="card-img-top" src='{{ asset('images/cover/'.$car->coverImage) }}'
+                                <img class="card-img-top" src='{{ asset('images/cover/' . $car->coverImage) }}'
                                     alt=''>
                                 <div class="card-body h-100">
-                                    <h2 class="card-title">{{$car->carBrand}} {{$car->carName}}</h2>
-                                    <h3 class="card-title"><span>Rp.{{$car->costPerDay}}</span> /Hari</h3>
+                                    <h2 class="card-title">{{ $car->carBrand }} {{ $car->carName }}</h2>
+                                    <h3 class="card-title"><span>Rp.{{ $car->costPerDay }}</span> /Hari</h3>
                                     <!-- <p class="card-text">
-                              Lorem ipsum dolor sit amet
-                            </p> -->
+                                      Lorem ipsum dolor sit amet
+                                    </p> -->
                                     <div>
                                         <table>
                                             <tr>
                                                 <td>Transmisi</td>
                                                 <td>:</td>
-                                                <td>{{$car->transmission()}}</td>
+                                                <td>{{ $car->transmission() }}</td>
                                             </tr>
                                             <tr>
                                                 <td>Kursi</td>
                                                 <td>:</td>
-                                                <td>{{$car->sit}} Orang</td>
+                                                <td>{{ $car->sit }} Orang</td>
                                             </tr>
                                             <tr>
                                                 <td>Bagasi</td>
                                                 <td>:</td>
-                                                <td>{{$car->luggage}} Bagasi</td>
+                                                <td>{{ $car->luggage }} Bagasi</td>
                                             </tr>
                                         </table>
                                     </div>
                                     <div class="button-kendaraan">
                                         <div class="homecar-button">
-                                            <button class="btn-homecar"
-                                                onclick="window.location.href = '{{ route('listkendaraan') }}';">Lihat
-                                                Kendaraan</button>
+                                            <a class="btn-homecar" href ="detailcar/{{ $car->id }}">Lihat
+                                                Kendaraan</a>
                                         </div>
                                     </div>
                                 </div>
@@ -121,10 +120,7 @@
                 </div>
                 <div class="homecar-button"
                     style="margin-top: 60px; justify-content: center; align-items: center; align-self: center;">
-                    <button class="btn-homecar center-block"
-                        onclick="window.location.href = '{{ route('listkendaraan') }}';">Muat
-                        Lebih
-                        Banyak</button>
+                    <a class="btn-homecar center-block" href = "{{ route('listkendaraan') }}">Muat Lebih Banyak</a>
                 </div>
             </div>
         </section>

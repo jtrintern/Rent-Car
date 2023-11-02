@@ -27,8 +27,8 @@ class CarRequest extends FormRequest
         return [
             //
             'carName' => 'required|max:30',
-            'coverImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'galleryImage.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'coverImage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5096',
+            'galleryImage.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5096',
             'carBrand' => 'required|max:30',
             'categoryId' => 'required',
             'transmisi' => 'required',

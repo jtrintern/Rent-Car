@@ -25,6 +25,13 @@ class CarController extends Controller
         $cars = Car::where('available', '0')->get();
         return view('rentcarr.index', compact('cars'));
     }
+    
+    public function indexListPage()
+    {
+        //
+        $cars = Car::where('available', '0')->get();
+        return view('rentcarr.page.listkendaraan', compact('cars'));
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -70,6 +77,7 @@ class CarController extends Controller
     public function show(Car $car)
     {
         //
+        return view('rentcarr.page.detailkendaraan', compact('car'));
     }
 
     /**
@@ -100,5 +108,9 @@ class CarController extends Controller
         //
         $car->delete();
         return redirect('admin/car');
+    }
+
+    public function PagePesan(Car $car){
+        return view('rentcarr.page.pesan', compact('car'));
     }
 }

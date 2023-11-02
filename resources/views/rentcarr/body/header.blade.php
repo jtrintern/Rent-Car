@@ -13,7 +13,15 @@
           <li><a class="nav-link scrollto @if(request()->is('listkendaraan', 'detailkendaraan', 'pesan', 'invoice')) active @endif" href="{{route ('listkendaraan')}}">Kendaraan</a></li>
           <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
           <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li>
-          <li><a class="getstarted scrollto @if(request()->is('loginregister')) active @endif" href="{{route ('loginregister')}}">Masuk / Daftar</a></li>
+          <li>@guest
+            <a class="getstarted scrollto" href="{{route ('login')}}">Masuk / Daftar</a>
+          @endguest
+        @auth
+        <a class="getstarted scrollto" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">Logout</a>
+        <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @endauth</li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

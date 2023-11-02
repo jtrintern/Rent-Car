@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
             $table->date('startBook');
-            $table->date('endBook');
+            $table->integer('duration')->length(2)->unsigned();
             $table->unsignedBigInteger('carId');
             $table->unsignedBigInteger('userId');
             $table->enum('bookType', ['0', '1']);
