@@ -6,6 +6,7 @@ use App\Models\Car;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Requests\CarRequest;
+use Illuminate\Support\Facades\Auth;
 
 class CarController extends Controller
 {

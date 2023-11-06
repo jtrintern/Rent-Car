@@ -12,12 +12,12 @@
                     <h1>Temukan Kendaraan Impian untuk <br>Perjalanan yang Tidak Terlupakan!</h1>
                     <h2>rentCAR, siap membawa anda menuju petualangan yang tak terlupakan</h2>
                     <div class="d-flex justify-content-center justify-content-lg-center">
-                        <a href="#all-car" class="btn-get-started scrollto">Lihat Kendaraan</a>
+                        <a href="{{ route('listkendaraan') }}" class="btn-get-started scrollto">Lihat Kendaraan</a>
                     </div>
                 </div>
                 <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                              <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-                            </div> -->
+                                  <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+                                </div> -->
             </div>
 
         </div>
@@ -84,8 +84,8 @@
                                     <h2 class="card-title">{{ $car->carBrand }} {{ $car->carName }}</h2>
                                     <h3 class="card-title"><span>Rp.{{ $car->costPerDay }}</span> /Hari</h3>
                                     <!-- <p class="card-text">
-                                      Lorem ipsum dolor sit amet
-                                    </p> -->
+                                          Lorem ipsum dolor sit amet
+                                        </p> -->
                                     <div>
                                         <table>
                                             <tr>
@@ -96,12 +96,12 @@
                                             <tr>
                                                 <td>Kursi</td>
                                                 <td>:</td>
-                                                <td>{{ $car->sit }} Orang</td>
+                                                <td>{{ $car->totalSit }} Orang</td>
                                             </tr>
                                             <tr>
                                                 <td>Bagasi</td>
                                                 <td>:</td>
-                                                <td>{{ $car->luggage }} Bagasi</td>
+                                                <td>{{ $car->totalLuggage }} Bagasi</td>
                                             </tr>
                                         </table>
                                     </div>

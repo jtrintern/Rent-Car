@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\TransactionRequest;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 
@@ -33,17 +34,28 @@ class TransactionController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function book(TransactionRequest $request)
     {
         //
+        $validated = $request->all();
+        // dd($validated);
+
+        $fileName = time() . '.' . $request->fotoktp->extension();
+        $validated['fotoktp'] = $fileName;
+
+        $request->fotoktp->move(public_path('images/transaction'), $fileName);
+
+        $trans = Transaction::create($validated);
+        return redirect('/invoice/'.$trans->id);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Transaction $transaction)
+    public function view(Transaction $transaction)
     {
         //
+        return view('rentcarr.page.invoice', compact('transaction'));
     }
 
     /**

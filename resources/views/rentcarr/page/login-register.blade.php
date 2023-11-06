@@ -83,6 +83,20 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-outline mb-4">
+                                                        <label class="form-label" for="form2Example11">Alamat</label>
+                                                        <input type="text" id="form2Example11" class="form-control"
+                                                            placeholder="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-outline mb-4">
+                                                        <label class="form-label" for="form2Example11">Tanggal Lahir</label>
+                                                        <input type="date" id="form2Example11" class="form-control"
+                                                            placeholder="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Email</label>
                                                         <input type="email" id="form2Example11" class="form-control"
                                                             placeholder="" />

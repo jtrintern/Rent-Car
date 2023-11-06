@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->date('startBook');
             $table->integer('duration')->length(2)->unsigned();
+            $table->string('NIK',16);
+            $table->string('fotoktp');
             $table->unsignedBigInteger('carId');
             $table->unsignedBigInteger('userId');
             $table->enum('bookType', ['0', '1']);

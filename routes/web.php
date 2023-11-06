@@ -5,6 +5,7 @@ use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CarController;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,7 +55,10 @@ Route::get('/',[CarController::class, 'indexHomePage'])->name('home');
 Route::get('/listcar',[CarController::class, 'indexListPage'])->name('listkendaraan');
 Route::get('/detailcar/{car}',[CarController::class, 'show'])->name('detailkendaraan');
 Route::get('/book/{car}',[CarController::class, 'PagePesan'])->name('pesanrental');
-Route::get('/invoice',[rentCarController::class, 'PageInvoice'])->name('invoice');
+Route::middleware('role:User','auth')->group(function (){
+    Route::post('/bookprocess',[TransactionController::class, 'book'])->name('transaction');
+    Route::get('/invoice/{transaction}',[TransactionController::class, 'view'])->name('invoice');
+});
 Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 

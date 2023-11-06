@@ -8,7 +8,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto @if(request()->is('home')) active @endif" href="{{route ('home')}}">Home</a></li>
+          <li><a class="nav-link scrollto @if(request()->is('/')) active @endif" href="{{route ('home')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
           <li><a class="nav-link scrollto @if(request()->is('listkendaraan', 'detailkendaraan', 'pesan', 'invoice')) active @endif" href="{{route ('listkendaraan')}}">Kendaraan</a></li>
           <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
