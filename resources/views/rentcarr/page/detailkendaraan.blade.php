@@ -72,7 +72,7 @@
                     <div class="row d-flex">
                         <div class="col-sm-3 d-flex">
                             <div>
-                                <img src="{{asset ('rentCar/assets/img/detail-kendaraan/icon-kursi.png')}}" alt="">
+                                <img src="{{asset ('assets/rentCar/assets/img/detail-kendaraan/icon-kursi.png')}}" alt="">
                             </div>
                             <div>
                                 <h4>Tempat Duduk</h4>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="col-sm-3 d-flex">
                             <div>
-                                <img src="{{asset ('rentCar/assets/img/detail-kendaraan/icon-bagasi.png')}}" alt="">
+                                <img src="{{asset ('assets/rentCar/assets/img/detail-kendaraan/icon-bagasi.png')}}" alt="">
                             </div>
                             <div class="div">
                                 <h4>Bagasi</h4>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="col-sm-3 d-flex">
                             <div>
-                                <img src="{{asset ('rentCar/assets/img/detail-kendaraan/icon-transmisi.png')}}" alt="">
+                                <img src="{{asset ('assets/rentCar/assets/img/detail-kendaraan/icon-transmisi.png')}}" alt="">
                             </div>
                             <div class="div">
                                 <h4>Transmisi</h4>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-sm-3 d-flex">
                             <div>
-                                <img src="{{asset ('rentCar/assets/img/detail-kendaraan/icon-bahanbakar.png')}}" alt="">
+                                <img src="{{asset ('assets/rentCar/assets/img/detail-kendaraan/icon-bahanbakar.png')}}" alt="">
                             </div>
                             <div class="div">
                                 <h4>Bahan Bakar</h4>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-sm-12 d-flex mt-4">
                             <div>
-                                <img src="{{asset ('rentCar/assets/img/detail-kendaraan/icon-bahanbakar.png')}}" alt="">
+                                <img src="{{asset ('assets/rentCar/assets/img/detail-kendaraan/icon-bahanbakar.png')}}" alt="">
                             </div>
                             <div class="div">
                                 <h5>
