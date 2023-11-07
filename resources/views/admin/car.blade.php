@@ -54,10 +54,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Model</th>
-                            <th>Make</th>
-                            <th>Transmission</th>
-                            <th>Category</th>
+                            <th>Car Name</th>
                             <th>License Plate</th>
                             <th>Status</th>
                             <th>Cost/Day</th>
@@ -68,22 +65,19 @@
                         @php
                             $i = 1;
                         @endphp
-                        @foreach($cars as $car)
+                        @foreach($cars as $key => $car)
                             <tr>
                                 <th scope="row">{{ $i++ }}</th>
-                                <td>{{ $car->carName }}</td>
-                                <td>{{ $car->carBrand }}</td>
-                                <td>{{ $car->transmission() }}</td>
-                                <td>{{ $car->category->name }}</td>
+                                <td>{{ $car->carBrand.' '. $car->carName }}</td>
                                 <td>{{ $car->noPol }}</td>
                                 <td>{{ $car->status() }}</td>
                                 <td>Rp. {{ number_format($car->costPerDay) }}</td>
                                 <td>
                                     <div class="row">
-                                        <button type="button" data-toggle="modal" data-target="#deleteModal"
+                                        <button type="button" data-toggle="modal" data-target="#deleteModal{{$key}}"
                                             class="btn btn-outline-danger btn-icon mg-r-10"><i
                                                 class="typcn typcn-trash"></i></button>
-                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog"
+                                        <div class="modal fade" id="deleteModal{{$key}}" tabindex="-1" role="dialog"
                                             aria-labelledby="deleteModalLabel" aria-hidden="true">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">

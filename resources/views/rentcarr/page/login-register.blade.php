@@ -57,7 +57,8 @@
                                         <div class="section-header">
                                             <h2>Daftar Sekarang</h2>
                                         </div>
-                                        <form>
+                                        <form method="POST" action="{{route('register')}}" id="frm-register">
+                                            @csrf
                                             <div class="desc">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis
                                                     lorem
@@ -69,7 +70,7 @@
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Nama
                                                             Depan</label>
-                                                        <input type="email" id="form2Example11" class="form-control"
+                                                        <input type="text" name="firstName" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
@@ -77,28 +78,28 @@
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Nama
                                                             Belakang</label>
-                                                        <input type="email" id="form2Example11" class="form-control"
+                                                        <input type="text" name="lastName" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Alamat</label>
-                                                        <input type="text" id="form2Example11" class="form-control"
+                                                        <input type="text" name="address" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Tanggal Lahir</label>
-                                                        <input type="date" id="form2Example11" class="form-control"
+                                                        <input type="date" name="birthdate" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Email</label>
-                                                        <input type="email" id="form2Example11" class="form-control"
+                                                        <input type="email" name="email" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
@@ -113,7 +114,7 @@
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text"
                                                             id="inputGroup-sizing-default">+62</span>
-                                                        <input type="text" class="form-control"
+                                                        <input type="text" name="phone" class="form-control"
                                                             aria-label="Sizing example input"
                                                             aria-describedby="inputGroup-sizing-default">
                                                     </div>
@@ -121,7 +122,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Password</label>
-                                                        <input type="email" id="form2Example11" class="form-control"
+                                                        <input type="password" name="password" id="form2Example11" class="form-control"
                                                             placeholder="" />
                                                     </div>
                                                 </div>
@@ -129,14 +130,16 @@
                                                     <div class="form-outline mb-4">
                                                         <label class="form-label" for="form2Example11">Konfirmasi
                                                             Passsword</label>
-                                                        <input type="email" id="form2Example11" class="form-control"
+                                                        <input type="password"
+                                                        name="password_confirmation" id="form2Example11" class="form-control"
                                                             placeholder="" />
+                                                            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="login-register-button">
                                                 <button class="btn-login-register"
-                                                    onclick="window.location.href = 'detailkendaraan.html';">Daftar</button>
+                                                    onclick="event.preventDefault(); document.getElementById('frm-register').submit();">Daftar</button>
                                             </div>
 
                                         </form>

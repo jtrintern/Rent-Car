@@ -25,16 +25,8 @@
                     </nav>
                 </li>
                 <li class="nav-item">
-                    <a href="chart-chartjs.html" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
+                    <a href="{{route('indexTransaction')}}" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
                         Transactions</a>
-                </li>
-                <li
-                    class="nav-item {{ Request::is('admin/adminlist', 'admin/memberlist') ? 'active' : '' }}">
-                    <a href="" class="nav-link with-sub"><i class="fas fa-user fa-fw"></i> User</a>
-                    <nav class="az-menu-sub">
-                        <a href="{{ route('indexAdmin') }}" class="nav-link">Admin</a>
-                        <a href="{{ route('indexCar') }}" class="nav-link">Member</a>
-                    </nav>
                 </li>
             </ul>
         </div><!-- az-header-menu -->
