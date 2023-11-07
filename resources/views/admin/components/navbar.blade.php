@@ -10,11 +10,14 @@
                 <a href="" class="close">&times;</a>
             </div><!-- az-header-menu-header -->
             <ul class="nav">
-                <li class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
-                    <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-chart-line fa-fw"></i>
+                <li
+                    class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
+                    <a href="{{ route('dashboard') }}" class="nav-link"><i
+                            class="fas fa-chart-line fa-fw"></i>
                         Dashboard</a>
                 </li>
-                <li class="nav-item {{ Request::is('admin/category', 'admin/car', 'admin/addcar') ? 'active' : '' }}">
+                <li
+                    class="nav-item {{ Request::is('admin/category', 'admin/car', 'admin/addcar') ? 'active' : '' }}">
                     <a href="" class="nav-link with-sub"><i class="fas fa-car fa-fw"></i> Cars</a>
                     <nav class="az-menu-sub">
                         <a href="{{ route('indexCategory') }}" class="nav-link">Category</a>
@@ -25,7 +28,8 @@
                     <a href="chart-chartjs.html" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
                         Transactions</a>
                 </li>
-                <li class="nav-item {{ Request::is('admin/adminlist', 'admin/memberlist') ? 'active' : '' }}">
+                <li
+                    class="nav-item {{ Request::is('admin/adminlist', 'admin/memberlist') ? 'active' : '' }}">
                     <a href="" class="nav-link with-sub"><i class="fas fa-user fa-fw"></i> User</a>
                     <nav class="az-menu-sub">
                         <a href="{{ route('indexAdmin') }}" class="nav-link">Admin</a>
@@ -36,8 +40,8 @@
         </div><!-- az-header-menu -->
         <div class="az-header-right">
             <div class="dropdown az-profile-menu">
-                <a href="" class="az-img-user"><img src="{{ asset('assets/admin/img/faces/face1.jpg') }}"
-                        alt=""></a>
+                <a href="" class="az-img-user"><img
+                        src="{{ asset('assets/admin/img/faces/face1.jpg') }}" alt=""></a>
                 <div class="dropdown-menu">
                     <div class="az-dropdown-header d-sm-none">
                         <a href="" class="az-header-arrow"><i class="icon ion-md-arrow-back"></i></a>
@@ -46,21 +50,26 @@
                         <div class="az-img-user">
                             <img src="{{ asset('assets/admin/img/faces/face1.jpg') }}" alt="">
                         </div><!-- az-img-user -->
-                        <h6>Aziana Pechon</h6>
-                        <span>Premium Member</span>
+                        <h6>{{ Auth::user()->firstName . ' ' . Auth::user()->lastName }}
+                        </h6>
+                        <span>@foreach (auth()->user()->getRoleNames() as $role)
+                            <li>{{ $role }}</li>
+                            @endforeach</span>
                     </div><!-- az-header-profile -->
 
                     {{-- <a href="" class="dropdown-item"><i class="typcn typcn-user-outline"></i> My
                         Profile</a>
                     <a href="" class="dropdown-item"><i class="typcn typcn-edit"></i> Edit Profile</a>
                     <a href="" class="dropdown-item"><i class="typcn typcn-time"></i> Activity Logs</a> --}}
-                    <a href="{{ route('profile.edit') }}" class="dropdown-item"><i class="typcn typcn-cog-outline"></i>
+                    <a href="{{ route('profile.edit') }}" class="dropdown-item"><i
+                            class="typcn typcn-cog-outline"></i>
                         Account
                         Settings</a>
-                    <a href="#"onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                         class="dropdown-item"><i class="typcn typcn-power-outline"></i>
                         Sign Out</a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                        class="d-none">
                         @csrf
                     </form>
                 </div><!-- dropdown-menu -->

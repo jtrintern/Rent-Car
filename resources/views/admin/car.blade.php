@@ -38,7 +38,7 @@
                     </p>
                 </div>
                 <div class="col-md-2 ht-lg-100p">
-                    <a href="{{ route('addCar') }}" class="btn btn-outline-indigo btn-block">Add New
+                    <a href="{{ route('addCar') }}" class="btn btn-indigo btn-block">Add New
                         Car</a>
                 </div>
             </div>
@@ -46,8 +46,8 @@
             <div class="table-responsive">
 
                 @if(Session::has('success'))
-                    <div class="alert alert-success" role="alert">
-                    showSuccessNotification("{{ Session::get('success') }}");
+                    <div class="alert alert-success" role="alert" id="success-alert">
+                        {{ Session::get('success') }}
                     </div>
                 @endif
                 <table class="table table-hover mg-b-0">

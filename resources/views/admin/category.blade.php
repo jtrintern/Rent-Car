@@ -142,7 +142,7 @@
                 <div class="form-group">
                     <input class="form-control" name="name" placeholder="Category Name" type="text">
                 </div>
-                <button type="submit" class="btn btn-outline-indigo btn-block">Add</button>
+                <button type="submit" class="btn btn-indigo btn-block">Add</button>
 
             </form>
 
