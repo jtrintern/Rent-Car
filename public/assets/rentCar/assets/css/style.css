@@ -775,7 +775,10 @@ section {
   /* background: #f3f5fa; */
   min-height: 171px;
   margin-top: 70px;
-  background-image: url(../img/entry-header.png);
+  background-image: url(../img/head-breadcrumbs.png);
+  background-color: rgba(59, 59, 59, 0.8);
+  background-blend-mode: overlay;
+
 }
 
 #breadcrumbs .container {
