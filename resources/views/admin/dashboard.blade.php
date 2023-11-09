@@ -60,8 +60,8 @@
 
             </div><!-- col -->
 
-            <div class="col-sm-2 col-md-2 mg-t-10 mg-sm-t-10"><button
-                    class="btn btn-outline-indigo btn-rounded btn-block">Show More</button></div>
+            <div class="col-sm-2 col-md-2 mg-t-10 mg-sm-t-10"><a href="{{route('indexTransaction')}}"
+                    class="btn btn-outline-indigo btn-rounded btn-block">Show More</a></div>
 
         </div><!-- row -->
     </div><!-- az-content-body -->

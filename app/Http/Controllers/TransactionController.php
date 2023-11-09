@@ -21,7 +21,7 @@ class TransactionController extends Controller
     public function dashboard()
     {
         //
-        $transaction = Transaction::all()->reverse();
+        $transaction = Transaction::orderBy('id', 'desc')->get();
         return view('admin.dashboard', compact('transaction'));
     }
 
