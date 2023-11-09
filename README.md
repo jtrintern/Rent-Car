@@ -1,66 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# :dress: Fashionism :jeans: _“Style with Ease, Confidence with Fashionism”_ Bangkit 2023 Product-based Capstone Project ~ _C23-PS242_
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![banner](banner.png)
 
-## About Laravel
+<div align="justify">
+Fashionism is an application to help users easily find local fashion products according to their style preferences. One of the main problems that this app aims to solve is the difficulty of local fashion products competing with foreign fashion products in Indonesia. This is due to the lack of awareness and ease for customers to find suitable local fashion products, thus leading to low engagement in the market for MSMEs. The target market of Fashionism is users who need help in choosing fashion to increase their confidence in their daily appearance. As for MSMEs, Fashionism can be a means to increase sales output and reach customers. The app can be accessed anywhere with an internet connection and a compatible device. We want to address this issue by engaging MSMEs in introducing their fashion products and helping users easily find clothes that suit their style preferences. It is essential to encourage the use of local fashion products to boost the economy and support the growth of the MSME industry in Indonesia. Through this app, users can feel more confident in their daily looks while supporting local fashion products and contributing to economic growth.
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Team Members :busts_in_silhouette:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+| No  | Name                                                                    | Student ID  | University                    | Learning Path               |
+| --- | ----------------------------------------------------------------------- | ----------- | ----------------------------- | --------------------------- |
+| 1.  | [Rezki Ciarchi Frendi Napitupulu](https://github.com/rezkinapitupulu02) | M017DSX0437 | Institut Teknologi Bandung    | Machine Learning :robot:    |
+| 2.  | [Farichaturrifqi Aryanitasari](https://github.com/achraa)               | M136DSY2930 | Universitas Amikom Yogyakarta | Machine Learning :robot:    |
+| 3.  | [Faza Iman Imron](https://github.com/fazaimron27)                       | C136DSX1978 | Universitas Amikom Yogyakarta | Cloud Computing :cloud:     |
+| 4.  | [Moch Surya Diva Nurkhoir](https://github.com/msuryaa)                  | C058DSX2967 | Politeknik Negeri Banyuwangi  | Cloud Computing :cloud:     |
+| 5.  | [Kevin Malik Fajar](https://github.com/kevinmf1)                        | A366DKX4013 | Universitas Trunojoyo         | Mobile Development :iphone: |
+| 6.  | [Nicola Yanni Alivant](https://github.com/alco-845)                     | A366DSX2296 | Universitas Trunojoyo         | Mobile Development :iphone: |
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tech Stack :technologist:
 
-## Learning Laravel
+| Learning Path      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Machine Learning   | ![python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![tensorflow](https://img.shields.io/badge/Tensorflow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) ![opencv](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white) ![sklearn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) |
+| Cloud Computing    |                                              ![nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) ![sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white) ![google cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)                                              |
+| Mobile Development |                                                                                                                                                          ![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white) ![android studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white)                                                                                                                                                          |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ML Architecture :brain:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<img src="ml-architecture.png" alt="ml architecture" width="885"/>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Cloud Architecture :cloud_with_lightning_and_rain:
 
-## Laravel Sponsors
+<img src="cloud-architecture.png" alt="cloud rchitecture" width="900"/>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Mobile Architecture :iphone:
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img src="md-architecture.png" alt="md architecture" width="885"/>
