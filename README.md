@@ -8,9 +8,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 ## Team Members :busts_in_silhouette:
 
-| No  | Name                     | University                   | Position    |
-| --- | ------------------------ | ---------------------------- | ----------- |
-| 1   | Moch Surya Diva Nurkhoir | Politeknik Negeri Banyuwangi | UI Designer |
+| No  | Name                                                  | University                   | Position            |
+| --- | ----------------------------------------------------- | ---------------------------- | ------------------- |
+| 1   | Moch Surya Diva Nurkhoir (https://github.com/msuryaa) | Politeknik Negeri Banyuwangi | UI Designer         |
+| 2   | Dzaki Ahmda Fajrianto (https://github.com/dzakiaf19)  | Politeknik Negeri Banyuwangi | Back-End Developer  |
+| 3   | Ayu Wulandari (https://github.com/AyuWulandari16)     | Politeknik Negeri Banyuwangi | Front-End Developer |
+| 4   | Gabriel Radith Widianto (https://github.com/Gradith)  | SMK Telkom Sidoarjo          | Front-End Developer |
 
 ## Tech Stack :technologist:
 
