@@ -33,7 +33,7 @@ Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'a
     Route::post('/storecar', [CarController::class , 'store'])->name('storeCar');
     Route::get('/deleteCar/{car}', [CarController::class , 'destroy'])->name('deleteCar');
     Route::get('/editcar/{car}', [CarController::class , 'edit'])->name('editCar');
-    Route::post('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
+    Route::put('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
 
     Route::get('/adminlist', [UserController::class , 'indexAdmin'])->name('indexAdmin');
     Route::get('/addadmin', [UserController::class , 'createAdmin'])->name('addAdmin');
@@ -63,7 +63,7 @@ Route::middleware('role:User','auth')->group(function (){
     Route::get('/invoice/{transaction}',[TransactionController::class, 'view'])->name('invoice');
 });
 
-Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
+// Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 
 require __DIR__ . '/auth.php';
