@@ -1458,6 +1458,10 @@ section {
   margin-top: 10px;
 }
 
+#pesan .modal .modal-body .butt {
+  margin-bottom: 60px;
+}
+
 #pesan .modal .modal-body .btn {
   /* background-color: var(--primary-color); */
   /* Hijau */

@@ -17,7 +17,7 @@
                         Dashboard</a>
                 </li>
                 <li
-                    class="nav-item {{ Request::is('admin/category', 'admin/car', 'admin/addcar') ? 'active' : '' }}">
+                    class="nav-item {{ Request::is('admin/category', 'admin/car', 'admin/addcar', 'admin/editcar/*') ? 'active' : '' }}">
                     <a href="" class="nav-link with-sub"><i class="fas fa-car fa-fw"></i> Cars</a>
                     <nav class="az-menu-sub">
                         <a href="{{ route('indexCategory') }}" class="nav-link">Category</a>
