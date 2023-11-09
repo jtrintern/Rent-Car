@@ -62,13 +62,39 @@
                     </select>
                 </div>
             </div>
-        </div>
-        <div class="row row-sm mg-b-20">
-            <div class="col-md-3">
-                <div class="form-group">
-                    <label for="name">Total Sit</label>
-                    <input class="form-control" type="number" name="totalSit" id="name"
-                        value="{{ old('totalSit') }}">
+            <div class="row row-sm mg-b-20">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="name">Total Seat</label>
+                        <input class="form-control" type="number" name="totalSit" id="name"
+                            value="{{ old('totalSit') }}">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="">Total Luggage</label>
+                        <input class="form-control" type="text" name="totalLuggage" id=""
+                            value="{{ old('totalLuggage') }}">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="">License Plate Number</label>
+                        <input class="form-control" type="text" style="text-transform:uppercase"
+                            oninput="this.value = this.value.toUpperCase()" name="noPol" id=""
+                            value="{{ old('noPol') }}">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="">Transmission</label>
+                    <label class="rdiobox">
+                        <input name="transmisi" type="radio" value="0">
+                        <span>Manual</span>
+                    </label>
+                    <label class="rdiobox">
+                        <input name="transmisi" type="radio" value="1">
+                        <span>Matic</span>
+                    </label>
                 </div>
             </div>
             <div class="col-md-3">

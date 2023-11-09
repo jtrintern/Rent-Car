@@ -25,6 +25,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'admin'], function () {
     Route::get('/dashboard', [TransactionController::class , 'dashboard'])->name('dashboard');
+
+    Route::get('/transaction', [TransactionController::class , 'index'])->name('indexTransaction');
     
     Route::get('/car', [CarController::class , 'indexList'])->name('indexCar');
     Route::get('/addcar', [CarController::class , 'create'])->name('addCar');

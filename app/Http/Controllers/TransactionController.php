@@ -14,12 +14,14 @@ class TransactionController extends Controller
     public function index()
     {
         //
+        $transaction = Transaction::all()->reverse();
+        return view('admin.transaction', compact('transaction'));
     }
     
     public function dashboard()
     {
         //
-        $transaction = Transaction::all();
+        $transaction = Transaction::all()->reverse();
         return view('admin.dashboard', compact('transaction'));
     }
 
