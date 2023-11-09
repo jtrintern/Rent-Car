@@ -61,6 +61,7 @@ Route::middleware('role:User','auth')->group(function (){
     Route::post('/bookprocess',[TransactionController::class, 'book'])->name('transaction');
     Route::get('/invoice/{transaction}',[TransactionController::class, 'view'])->name('invoice');
 });
+Route::get('/history',[CarController::class, 'PageHistory'])->name('history');
 Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 

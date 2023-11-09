@@ -8,7 +8,7 @@
                     <h2>List Kendaraan</h2>
                     <ol>
                         <li> <a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="{{ route('listkendaraan') }}">List Kendaraan</a></li>
+                        <li><a style="color: #E1B12C;" href="{{ route('listkendaraan') }}">List Kendaraan</a></li>
                         {{-- <li style="color: #E1B12C;"><a href="detailkendaraan.html">Detail Kendaraan</a></li>
                     <li><a href="">Pemesanan & Pembayaran</a></li> --}}
                     </ol>

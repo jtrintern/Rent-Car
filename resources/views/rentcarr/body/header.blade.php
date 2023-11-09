@@ -16,15 +16,17 @@
                 <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li>
                 @role('User')
-                <li><a class="nav-link scrollto" href="#contact">History</a></li>
+                    <li><a class="nav-link scrollto @if (request()->is('history')) active @endif"
+                            href="{{ route('history') }}">History</a></li>
                 @endrole
                 <li>@guest
-                        <a class="getstarted scrollto" href="{{ route('login') }}">Masuk / Daftar</a>
+                    <a class="getstarted scrollto" href="{{ route('login') }}">Masuk / Daftar</a>
                     @endguest
                     @auth
                         <a class="getstarted scrollto"
                             onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">Logout</a>
-                        <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <form id="frm-logout" action="{{ route('logout') }}" method="POST"
+                            style="display: none;">
                             {{ csrf_field() }}
                         </form>
                     @endauth

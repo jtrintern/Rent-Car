@@ -114,4 +114,8 @@ class CarController extends Controller
     public function PagePesan(Car $car){
         return view('rentcarr.page.pesan', compact('car'));
     }
+
+    public function PageHistory() {
+        return view('rentcarr.page.history');
+    }
 }
