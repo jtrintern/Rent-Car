@@ -775,8 +775,24 @@ section {
   /* background: #f3f5fa; */
   min-height: 171px;
   margin-top: 70px;
-  background-image: url(../img/entry-header.png);
+  background-image: url(../img/entry-header-1.png);
+  background-color: rgb(2, 18, 35, 0.6);
+  background-blend-mode: overlay;
 }
+
+/* .breadcrumbs .konten {
+  background-color: #021223;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.breadcrumbs .konten-detail {
+  width: 100%;
+  margin-top: 42px;
+  margin-bottom: 50px;
+  padding-left: 92px;
+} */
+
 
 #breadcrumbs .container {
   padding-top: 30px;
@@ -862,6 +878,11 @@ section {
     justify-content: center;
     align-items: center;
     align-content: center;
+  }
+
+  .breadcrumbs .konten-detail {
+    padding-left: 30px;
+    margin-top: 20px;
   }
 }
 
