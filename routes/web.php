@@ -59,9 +59,10 @@ Route::get('/detailcar/{car}',[CarController::class, 'show'])->name('detailkenda
 Route::get('/book/{car}',[CarController::class, 'PagePesan'])->name('pesanrental');
 Route::middleware('role:User','auth')->group(function (){
     Route::post('/bookprocess',[TransactionController::class, 'book'])->name('transaction');
+    Route::get('/history',[TransactionController::class, 'PageHistory'])->name('history');
     Route::get('/invoice/{transaction}',[TransactionController::class, 'view'])->name('invoice');
 });
-Route::get('/history',[CarController::class, 'PageHistory'])->name('history');
+
 Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 

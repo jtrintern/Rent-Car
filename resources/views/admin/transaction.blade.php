@@ -27,10 +27,10 @@
 
         <div class="row row-sm mg-b-20">
             <div class="col-lg-12 ht-lg-100p">
-                <div class="az-content-label mg-b-10">Car Category</div>
+                <div class="az-content-label mg-b-10">Transaction Category</div>
                 <div class="row row-sm mg-b-20">
                     <div class="col-md-10 ht-lg-100p">
-                        <p class="mg-b-20">In this table, we have a list of cars available for rent, including their make,
+                        <p class="mg-b-20">In this table, we have a list of transaction available for rent, including their make,
                             model, cost per day, and availability status. You can customize this
                             table with your specific rental inventory data or add more columns as needed for additional
                             information,

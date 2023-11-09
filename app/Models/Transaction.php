@@ -41,7 +41,7 @@ class Transaction extends Model
     }
 
     public function until(){
-        $current = $this->bookStart;
+        $current = $this->startBook;
         return date('Y-m-d', strtotime($current. ' + '.$this->duration.' days'));
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\TransactionRequest;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TransactionController extends Controller
 {
@@ -21,8 +22,15 @@ class TransactionController extends Controller
     public function dashboard()
     {
         //
-        $transaction = Transaction::orderBy('id', 'desc')->get();
+        $transaction = Transaction::orderBy('id', 'desc')->take(5)->get();
         return view('admin.dashboard', compact('transaction'));
+    }
+    
+    public function PageHistory()
+    {
+        //
+        $transaction = Transaction::where('userId', '=', Auth::user()->id)->get();
+        return view('rentcarr.page.history', compact('transaction'));
     }
 
     /**

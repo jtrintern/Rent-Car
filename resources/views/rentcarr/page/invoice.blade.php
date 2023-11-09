@@ -7,8 +7,8 @@
                 <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
                     <h2>Invoice</h2>
                     <ol>
-                        <li> <a href="index.html">Home</a></li>
-                        <li><a href="listkendaraan.html">History</a></li>
+                        <li> <a href="/">Home</a></li>
+                        <li><a href="{{route('history')}}">History</a></li>
                         <li><a  style="color: #E1B12C;" href="detailkendaraan.html">Invoice</a></li>
                     </ol>
                 </div>
