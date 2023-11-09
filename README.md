@@ -8,14 +8,12 @@ Fashionism is an application to help users easily find local fashion products ac
 
 ## Team Members :busts_in_silhouette:
 
-| No  | Name                                                                    | Student ID  | University                    | Learning Path               |
-| --- | ----------------------------------------------------------------------- | ----------- | ----------------------------- | --------------------------- |
-| 1.  | [Rezki Ciarchi Frendi Napitupulu](https://github.com/rezkinapitupulu02) | M017DSX0437 | Institut Teknologi Bandung    | Machine Learning :robot:    |
-| 2.  | [Farichaturrifqi Aryanitasari](https://github.com/achraa)               | M136DSY2930 | Universitas Amikom Yogyakarta | Machine Learning :robot:    |
-| 3.  | [Faza Iman Imron](https://github.com/fazaimron27)                       | C136DSX1978 | Universitas Amikom Yogyakarta | Cloud Computing :cloud:     |
-| 4.  | [Moch Surya Diva Nurkhoir](https://github.com/msuryaa)                  | C058DSX2967 | Politeknik Negeri Banyuwangi  | Cloud Computing :cloud:     |
-| 5.  | [Kevin Malik Fajar](https://github.com/kevinmf1)                        | A366DKX4013 | Universitas Trunojoyo         | Mobile Development :iphone: |
-| 6.  | [Nicola Yanni Alivant](https://github.com/alco-845)                     | A366DSX2296 | Universitas Trunojoyo         | Mobile Development :iphone: |
+| No  | Name                                                      | University  | Learning Path                 |
+| --- | --------------------------------------------------------- | ----------- | ----------------------------- | -------------------------- |
+| 1.  | [Dzaki Ahmad Fajrianto](https://github.com/dzakiaf19)     | M017DSX0437 | Politeknik Negeri Banyuwangi  | Back-End Developer :robot: |
+| 2.  | [Ayu Wulandari](https://github.com/achraa)                | M136DSY2930 | Universitas Amikom Yogyakarta | Machine Learning :robot:   |
+| 3.  | [Gabriel Radith Widianto](https://github.com/fazaimron27) | C136DSX1978 | Universitas Amikom Yogyakarta | Cloud Computing :cloud:    |
+| 4.  | [Moch Surya Diva Nurkhoir](https://github.com/msuryaa)    | C058DSX2967 | Politeknik Negeri Banyuwangi  | Cloud Computing :cloud:    |
 
 ## Tech Stack :technologist:
 
