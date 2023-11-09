@@ -1,7 +1,7 @@
 <div class="az-header">
     <div class="container">
         <div class="az-header-left">
-            <a href="index.html" class="az-logo"><span></span> RentCar.</a>
+            <a href="{{ route('dashboard') }}" class="az-logo"  style="color: #05366D"><span style="color: #E1B12C">Rent</span>Car.</a>
             <a href="" id="azMenuShow" class="az-header-menu-icon d-lg-none"><span></span></a>
         </div><!-- az-header-left -->
         <div class="az-header-menu">
@@ -24,7 +24,7 @@
                         <a href="{{ route('indexCar') }}" class="nav-link">Cars</a>
                     </nav>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {{ Request::is('admin/transaction') ? 'active' : '' }}">
                     <a href="{{route('indexTransaction')}}" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
                         Transactions</a>
                 </li>
