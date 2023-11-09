@@ -94,7 +94,7 @@
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"
                                                                 data-dismiss="modal">Close</button>
-                                                            <a href="#" class="btn btn-danger">Delete</a>
+                                                            <a href="deleteTransaction/{{$tran->id}}" class="btn btn-danger">Delete</a>
                                                         </div>
                                                     </div>
                                                 </div>

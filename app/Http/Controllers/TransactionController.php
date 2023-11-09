@@ -90,5 +90,7 @@ class TransactionController extends Controller
     public function destroy(Transaction $transaction)
     {
         //
+        $transaction->delete();
+        return redirect('admin/transaction')->with(['success' => 'Transaction data deleted successfully']);
     }
 }
