@@ -11,7 +11,7 @@
                 <li><a class="nav-link scrollto @if (request()->is('/')) active @endif"
                         href="{{ route('home') }}">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-                <li><a class="nav-link scrollto @if (request()->is('listcar', 'detailkendaraan', 'pesan', 'invoice')) active @endif"
+                <li><a class="nav-link scrollto @if (request()->is('listcar', 'detailcar/*', 'book/*', 'invoice/*')) active @endif"
                         href="{{ route('listkendaraan') }}">Kendaraan</a></li>
                 <li><a class="nav-link scrollto" href="#galeri">Galeri</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li>

@@ -655,6 +655,8 @@ section {
 .card-product img {
   opacity: 0.9;
   transition: opacity 0.3s;
+  min-height: 160px;
+  max-height: 160px;
 }
 
 /* Efek hover untuk card-product */
