@@ -1,7 +1,7 @@
 <div class="az-header">
     <div class="container">
         <div class="az-header-left">
-            <a href="index.html" class="az-logo"><span></span> RentCar</a>
+            <a href="{{ route('dashboard') }}" class="az-logo"  style="color: #05366D"><span style="color: #E1B12C">Rent</span>Car.</a>
             <a href="" id="azMenuShow" class="az-header-menu-icon d-lg-none"><span></span></a>
         </div><!-- az-header-left -->
         <div class="az-header-menu">
