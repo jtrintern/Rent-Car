@@ -8,8 +8,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 ## Team Members :busts_in_silhouette:
 
-| No  | Name | University | Position |
-| --- | ---- | ---------- | -------- |
+| No  | Name                     | University                   | Position    |
+| --- | ------------------------ | ---------------------------- | ----------- |
+| 1   | Moch Surya Diva Nurkhoir | Politeknik Negeri Banyuwangi | UI Designer |
 
 ## Tech Stack :technologist:
 
