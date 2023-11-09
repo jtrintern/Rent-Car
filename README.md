@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 | No  | Name                                                   | University                   | Position                        |
 | --- | ------------------------------------------------------ | ---------------------------- | ------------------------------- |
-| 1   | [Moch Surya Diva Nurkhoir](https://github.com/msuryaa) | Politeknik Negeri Banyuwangi | UI Designer (#-uiux)            |
+| 1   | [Moch Surya Diva Nurkhoir](https://github.com/msuryaa) | Politeknik Negeri Banyuwangi | UI Designer :star:              |
 | 2   | [Dzaki Ahmad Fajrianto](https://github.com/dzakiaf19)  | Politeknik Negeri Banyuwangi | Back-End Developer (#-web-dev)  |
 | 3   | [Ayu Wulandari](https://github.com/AyuWulandari16)     | Politeknik Negeri Banyuwangi | Front-End Developer (#-web-dev) |
 | 4   | [Gabriel Radith Widianto](https://github.com/GRadith)  | SMK Telkom Sidoarjo          | Front-End Developer (#-web-dev) |
