@@ -150,11 +150,11 @@
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <div class="content">
-                                            <img src="{{ asset('assets/rentCar/assets/img/modal.png') }}" alt="">
+                                            <img src="{{ asset('/rentCar/assets/img/modal.png') }}" alt="">
                                             <h3>Peringatan !</h3>
                                             <h5>Pastikan data yang anda isi sudah benar dan sesuai</h5>
                                         </div>
-                                        <div class="row butt">
+                                        <div class="row">
                                             <div class="col-md-12">
                                                 <button type="button" class="btn btn1"
                                                     data-bs-dismiss="modal">Close</button>

@@ -6,9 +6,7 @@
     <div class="az-content-body">
         <div class="az-dashboard-one-title">
             <div>
-                <h2 class="az-dashboard-title">Hi
-                    {{ Auth::user()->firstName . ' ' . Auth::user()->lastName }},
-                    welcome back!
+                <h2 class="az-dashboard-title">Hi {{ Auth::user()->firstName . ' ' . Auth::user()->lastName }}, welcome back!
                 </h2>
                 <p class="az-dashboard-text">Your web dashboard.</p>
             </div>
@@ -25,8 +23,7 @@
         <div class="az-dashboard-nav">
         </div>
 
-        <form method="POST" action="/admin/updatecar/{{ $car->id }}">
-            @method('PUT')
+        <form method="post" action="/admin/updatecar/{{ $car->id }}">
             @csrf
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -98,29 +95,9 @@
                             value="{{ $car->costPerDay }}">
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <label for="">Transmission</label>
-                    <div class="row d-flex" style="margin-top:10px;">
-                        <div class="col-md-4">
-                            <label class="rdiobox">
-                                <input name="transmisi" type="radio" value="0">
-                                <span>Manual</span>
-                            </label>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="rdiobox">
-                                <input name="transmisi" type="radio" value="1">
-                                <span>Matic</span>
-                            </label>
-                        </div>
-                    </div>
-
-                </div>
             </div>
-            <a href="{{ route('indexCar') }}" class="btn btn-outline-indigo">Back</a>
-            <button type="submit" class="btn btn-indigo">Update Car</button>
-            @method('PUT')
+            <a href="{{ route('indexCar') }}" class="btn btn-indigo">Back</a>
+            <button type="submit" class="btn btn-outline-indigo">Update Car</button>
         </form>
     </div><!-- az-content-body -->
 

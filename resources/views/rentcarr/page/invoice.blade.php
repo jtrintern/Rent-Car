@@ -5,11 +5,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
-                    <h2>Invoice</h2>
+                    <h2>Detail Kendaraan</h2>
                     <ol>
-                        <li> <a href="/">Home</a></li>
-                        <li><a href="{{route('history')}}">History</a></li>
-                        <li><a  style="color: #E1B12C;" href="detailkendaraan.html">Invoice</a></li>
+                        <li> <a href="index.html">Home</a></li>
+                        <li><a href="listkendaraan.html">Pilih Kendaraan</a></li>
+                        <li style="color: #E1B12C;"><a href="detailkendaraan.html">Detail Kendaraan</a></li>
+                        <li><a href="">Pemesanan & Pembayaran</a></li>
                     </ol>
                 </div>
                 <div class="col-lg-4 entry-button flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">

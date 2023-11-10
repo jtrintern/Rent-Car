@@ -34,7 +34,7 @@ class CategoryController extends Controller
         //
         Category::create($request->all());
 
-        return redirect('admin/category')->with(['success' => 'Category data create successfully']);
+        return redirect('admin/category');
     }
 
     /**
@@ -60,7 +60,7 @@ class CategoryController extends Controller
     {
         //
         $category->update($request->all());
-        return redirect('admin/category')->with(['success' => 'Category data updated successfully']);
+        return redirect('admin/category')->with(['success' => 'Company data updated successfully']);
     }
 
     /**

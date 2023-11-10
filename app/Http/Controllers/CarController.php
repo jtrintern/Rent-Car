@@ -69,7 +69,7 @@ class CarController extends Controller
         
         Car::create($validated);
 
-        return redirect('admin/car')->with(['success' => 'Car data create successfully']);
+        return redirect('admin/car');
     }
 
     /**
@@ -98,7 +98,7 @@ class CarController extends Controller
     {
         //
         $car->update($request->all());
-        return redirect('admin/car')->with(['success' => 'Car data update successfully']);
+        return redirect('admin/car');
     }
 
     /**
@@ -108,14 +108,10 @@ class CarController extends Controller
     {
         //
         $car->delete();
-        return redirect('admin/car')->with(['success' => 'Car data delete successfully']);
+        return redirect('admin/car');
     }
 
     public function PagePesan(Car $car){
         return view('rentcarr.page.pesan', compact('car'));
-    }
-
-    public function PageHistory() {
-        return view('rentcarr.page.history');
     }
 }
