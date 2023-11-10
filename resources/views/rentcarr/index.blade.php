@@ -12,7 +12,7 @@
                     <h1>Temukan Kendaraan Impian untuk <br>Perjalanan yang Tidak Terlupakan!</h1>
                     <h2>rentCAR, siap membawa anda menuju petualangan yang tak terlupakan</h2>
                     <div class="d-flex justify-content-center justify-content-lg-center">
-                        <a href="{{ route('listkendaraan') }}" class="btn-get-started scrollto">Lihat Kendaraan</a>
+                        <a href="#all-car" class="btn-get-started scrollto">Lihat Kendaraan</a>
                     </div>
                 </div>
                 <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">

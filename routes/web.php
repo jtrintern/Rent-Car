@@ -25,13 +25,17 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'admin'], function () {
     Route::get('/dashboard', [TransactionController::class , 'dashboard'])->name('dashboard');
+
+    Route::get('/transaction', [TransactionController::class , 'index'])->name('indexTransaction');
+    Route::get('/detailTransaction/{transaction}', [TransactionController::class , 'detail'])->name('detailTransaction');
+    Route::get('/deleteTransaction/{transaction}', [TransactionController::class , 'destroy'])->name('deleteTransaction');
     
     Route::get('/car', [CarController::class , 'indexList'])->name('indexCar');
     Route::get('/addcar', [CarController::class , 'create'])->name('addCar');
     Route::post('/storecar', [CarController::class , 'store'])->name('storeCar');
     Route::get('/deleteCar/{car}', [CarController::class , 'destroy'])->name('deleteCar');
     Route::get('/editcar/{car}', [CarController::class , 'edit'])->name('editCar');
-    Route::post('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
+    Route::put('/updatecar/{car}', [CarController::class , 'update'])->name('updateCar');
 
     Route::get('/adminlist', [UserController::class , 'indexAdmin'])->name('indexAdmin');
     Route::get('/addadmin', [UserController::class , 'createAdmin'])->name('addAdmin');
@@ -57,9 +61,11 @@ Route::get('/detailcar/{car}',[CarController::class, 'show'])->name('detailkenda
 Route::get('/book/{car}',[CarController::class, 'PagePesan'])->name('pesanrental');
 Route::middleware('role:User','auth')->group(function (){
     Route::post('/bookprocess',[TransactionController::class, 'book'])->name('transaction');
+    Route::get('/history',[TransactionController::class, 'PageHistory'])->name('history');
     Route::get('/invoice/{transaction}',[TransactionController::class, 'view'])->name('invoice');
 });
-Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
+
+// Route::get('/loginregister',[rentCarController::class, 'PageLoginRegister'])->name('loginregister');
 
 
 require __DIR__ . '/auth.php';

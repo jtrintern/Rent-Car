@@ -37,60 +37,31 @@
                             <tr>
                                 <th>No</th>
                                 <th>License plate</th>
-                                <th>Car Name</th>
-                                <th>renter name</th>
-                                <th>start date rent</th>
-                                <th>end date rent</th>
+                                <th>Car Model</th>
+                                <th>Renter Name</th>
+                                <th>Start date rent</th>
+                                <th>End date rent</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>P 12324 SW</td>
-                                <td>Honda Brio</td>
-                                <td>Radith</td>
-                                <td>12/4/23</td>
-                                <td>15/4/23</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>P 12324 SW</td>
-                                <td>Honda Brio</td>
-                                <td>Radith</td>
-                                <td>12/4/23</td>
-                                <td>15/4/23</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>P 12324 SW</td>
-                                <td>Honda Brio</td>
-                                <td>Radith</td>
-                                <td>12/4/23</td>
-                                <td>15/4/23</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>P 12324 SW</td>
-                                <td>Honda Brio</td>
-                                <td>Radith</td>
-                                <td>12/4/23</td>
-                                <td>15/4/23</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>P 12324 SW</td>
-                                <td>Honda Brio</td>
-                                <td>Radith</td>
-                                <td>12/4/23</td>
-                                <td>15/4/23</td>
-                            </tr>
+                            @foreach ($transaction as $key => $tran)
+                                <tr>
+                                    <th scope="row">{{$key+1}}</th>
+                                    <td>{{$tran->car->noPol}}</td>
+                                    <td>{{$tran->car->carBrand.' '.$tran->car->carName}}</td>
+                                    <td>{{$tran->user->firstName.' '.$tran->user->lastName}}</td>
+                                    <td>{{date('d F Y', strtotime($tran->startBook))}}</td>
+                                    <td>{{date('d F Y', strtotime($tran->until()))}}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
 
             </div><!-- col -->
 
-            <div class="col-sm-2 col-md-2 mg-t-10 mg-sm-t-10"><button class="btn btn-outline-indigo btn-rounded btn-block">Show More</button></div>
+            <div class="col-sm-2 col-md-2 mg-t-10 mg-sm-t-10"><a href="{{route('indexTransaction')}}"
+                    class="btn btn-outline-indigo btn-rounded btn-block">Show More</a></div>
 
         </div><!-- row -->
     </div><!-- az-content-body -->

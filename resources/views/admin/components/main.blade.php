@@ -53,6 +53,8 @@
     <!-- azia CSS -->
     <link rel="stylesheet" href="{{asset('assets/admin/css/azia.css')}}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 
 <body>
@@ -80,6 +82,9 @@
     <script src="{{asset('assets/admin/js/chart.flot.sampledata.js')}}"></script>
     <script src="{{asset('assets/admin/js/dashboard.sampledata.js')}}"></script>
     <script src="{{asset('assets/admin/js/jquery.cookie.js')}}" type="text/javascript"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
     <script>
         $(function() {
             'use strict'
@@ -300,6 +305,26 @@
 
         });
     </script>
+
+<script>
+    // Menunggu dokumen siap
+    document.addEventListener("DOMContentLoaded", function() {
+        // Menentukan waktu munculnya alert dalam milidetik (3000 ms = 3 detik)
+        var alertTimeout = 3000;
+
+        // Cari elemen alert
+        var alertElement = document.getElementById('success-alert');
+
+        // Jika elemen alert ditemukan
+        if (alertElement) {
+            // Atur timeout untuk menyembunyikan alert setelah waktu tertentu
+            setTimeout(function() {
+                alertElement.style.display = 'none';
+            }, alertTimeout);
+        }
+    });
+</script>
+
 </body>
 
 </html>

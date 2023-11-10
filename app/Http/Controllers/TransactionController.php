@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\TransactionRequest;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TransactionController extends Controller
 {
@@ -14,13 +15,22 @@ class TransactionController extends Controller
     public function index()
     {
         //
+        $transaction = Transaction::all()->reverse();
+        return view('admin.transaction', compact('transaction'));
     }
     
     public function dashboard()
     {
         //
-        $transaction = Transaction::all();
+        $transaction = Transaction::orderBy('id', 'desc')->take(5)->get();
         return view('admin.dashboard', compact('transaction'));
+    }
+    
+    public function PageHistory()
+    {
+        //
+        $transaction = Transaction::where('userId', '=', Auth::user()->id)->get();
+        return view('rentcarr.page.history', compact('transaction'));
     }
 
     /**
@@ -80,5 +90,12 @@ class TransactionController extends Controller
     public function destroy(Transaction $transaction)
     {
         //
+        $transaction->delete();
+        return redirect('admin/transaction')->with(['success' => 'Transaction data deleted successfully']);
+    }
+
+    public function detail(string $id){
+        $transaction = Transaction::findOrFail($id);
+        return view('admin.detailTransaction', compact('transaction'));
     }
 }

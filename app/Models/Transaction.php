@@ -39,4 +39,9 @@ class Transaction extends Model
             return 'Dengan supir';
         }
     }
+
+    public function until(){
+        $current = $this->startBook;
+        return date('Y-m-d', strtotime($current. ' + '.$this->duration.' days'));
+    }
 }
