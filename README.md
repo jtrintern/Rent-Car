@@ -3,7 +3,7 @@
 ![banner](banner.png)
 
 <div align="justify">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"RentCar is an innovative online platform designed for hassle-free car rental experiences. With our user-friendly website, you can easily browse and select from a diverse fleet of vehicles, ranging from compact cars to luxury SUVs. Our seamless booking process ensures a convenient and efficient way to secure the perfect vehicle for your needs. Enjoy a smooth journey with RentCar – where renting a car becomes a simple and enjoyable endeavor."
 </div>
 
 ## Team Members :busts_in_silhouette:
