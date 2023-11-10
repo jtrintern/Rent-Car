@@ -93,4 +93,9 @@ class TransactionController extends Controller
         $transaction->delete();
         return redirect('admin/transaction')->with(['success' => 'Transaction data deleted successfully']);
     }
+
+    public function detail(string $id){
+        $transaction = Transaction::findOrFail($id);
+        return view('admin.detailTransaction', compact('transaction'));
+    }
 }

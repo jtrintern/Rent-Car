@@ -27,6 +27,7 @@ Route::group(['middleware' => ['role:Admin', 'auth', 'verified'], 'prefix' => 'a
     Route::get('/dashboard', [TransactionController::class , 'dashboard'])->name('dashboard');
 
     Route::get('/transaction', [TransactionController::class , 'index'])->name('indexTransaction');
+    Route::get('/detailTransaction/{transaction}', [TransactionController::class , 'detail'])->name('detailTransaction');
     Route::get('/deleteTransaction/{transaction}', [TransactionController::class , 'destroy'])->name('deleteTransaction');
     
     Route::get('/car', [CarController::class , 'indexList'])->name('indexCar');

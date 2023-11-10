@@ -24,7 +24,7 @@
                         <a href="{{ route('indexCar') }}" class="nav-link">Cars</a>
                     </nav>
                 </li>
-                <li class="nav-item {{ Request::is('admin/transaction') ? 'active' : '' }}">
+                <li class="nav-item {{ Request::is('admin/transaction', 'admin/detailTransaction/*') ? 'active' : '' }}">
                     <a href="{{route('indexTransaction')}}" class="nav-link"><i class="fas fa-exchange-alt fa-fw"></i>
                         Transactions</a>
                 </li>

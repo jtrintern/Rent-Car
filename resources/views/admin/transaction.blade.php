@@ -99,8 +99,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            {{-- <a href="editcar/{{ $car->id }}" class="btn btn-outline-warning btn-icon"><i
-                                                class="typcn typcn-edit"></i></a> --}}
+                                            <a href="detailTransaction/{{ $tran->id }}" class="btn btn-outline-warning btn-icon"><i
+                                                class="typcn typcn-edit"></i></a>
                                         </div>
                                     </td>
                                 </tr>
