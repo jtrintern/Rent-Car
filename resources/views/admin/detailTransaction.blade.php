@@ -41,13 +41,13 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="name">Renter Name</label>
-                            <input class="form-control" value="" type="text" name="name" id="name" readonly>
+                            <input class="form-control" value="{{ $transaction->user->firstName . ' ' . $transaction->user->lastName }}" type="text" name="name" id="name" readonly>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="">No. Telepon/Whatsapp</label>
-                            <input class="form-control" value="" type="text" name="carBrand" id="" readonly>
+                            <input class="form-control" value="+62 {{ $transaction->user->phone }}" type="text" name="carBrand" id="" readonly>
                         </div>
                     </div>
                 </div>
@@ -67,20 +67,20 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="name">Car Model</label>
-                    <input class="form-control" value="" type="text" name="carName" id="name" readonly>
+                    <input class="form-control" value="{{ $transaction->car->carName }}" type="text" name="carName" id="name" readonly>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="">Car Brand</label>
-                    <input class="form-control" value="" type="text" name="carBrand" id="" readonly>
+                    <input class="form-control" value="{{ $transaction->car->carBrand }}" type="text" name="carBrand" id="" readonly>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="">License Plate Number</label>
                     <input class="form-control" type="text" style="text-transform:uppercase"
-                        oninput="this.value = this.value.toUpperCase()" name="noPol" id="" value="" readonly>
+                        oninput="this.value = this.value.toUpperCase()" name="noPol" id="" value="{{ $transaction->car->noPol }}" readonly>
                 </div>
             </div>
         </div>
@@ -89,19 +89,19 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="name">Cost</label>
-                    <input class="form-control" type="number" name="costPerDay" id="name" value="" readonly>
+                    <input class="form-control" type="text" name="totalCost" id="name" value="Rp {{ number_format($transaction->totalCost, 0, ',', '.') }}" readonly>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="name">Start Date Rental</label>
-                    <input class="form-control" type="number" name="totalSit" id="name" value="" readonly>
+                    <input class="form-control" type="text" name="totalSit" id="name" value="{{ date('d F Y', strtotime($transaction->startBook)) }}" readonly>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="">End Date Rental</label>
-                    <input class="form-control" type="text" name="totalLuggage" id="" value="" readonly>
+                    <input class="form-control" type="text" name="totalLuggage" id="" value="{{ date('d F Y', strtotime($transaction->until())) }}" readonly>
                 </div>
             </div>
         </div>
