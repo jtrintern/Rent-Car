@@ -95,7 +95,7 @@
                                     alt=''>
                                 <div class="card-body h-100">
                                     <h2 class="card-title">{{ $car->carBrand . ' ' . $car->carName }}</h2>
-                                    <h3 class="card-title"><span>Rp.{{ number_format($car->costPerDay) }}</span> /Hari</h3>
+                                    <h3 class="card-title"><span>Rp. {{ number_format($car->costPerDay) }}</span> /Hari</h3>
                                     <div>
                                         <table>
                                             <tr>

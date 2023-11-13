@@ -100,7 +100,7 @@
                                                 </div>
                                             </div>
                                             <a href="detailTransaction/{{ $tran->id }}" class="btn btn-outline-warning btn-icon"><i
-                                                class="typcn typcn-edit"></i></a>
+                                                class="typcn typcn-eye"></i></a>
                                         </div>
                                     </td>
                                 </tr>

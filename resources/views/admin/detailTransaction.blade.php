@@ -89,7 +89,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="name">Cost</label>
-                    <input class="form-control" type="text" name="totalCost" id="name" value="Rp {{ number_format($transaction->totalCost, 0, ',', '.') }}" readonly>
+                    <input class="form-control" type="text" name="totalCost" id="name" value="Rp {{ number_format($transaction->totalCost, 0, ',', ',') }}" readonly>
                 </div>
             </div>
             <div class="col-md-4">
