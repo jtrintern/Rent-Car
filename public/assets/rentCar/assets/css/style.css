@@ -1885,3 +1885,9 @@ section {
     padding-top: 4px;
   }
 }
+
+@media print{
+  header, nav, footer, .breadcrumbs{
+    display: none;
+  }
+}
